@@ -1,3 +1,3 @@
 module.exports = {
-	chave: "SUA_CHAVE_DO_MONGO",
+	chave: "",//SUA_CHAVE_DO_MONGO
 }
