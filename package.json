@@ -1,10 +1,19 @@
 {
   "name": "nodejs",
-  "version": "1.0.0",
+  "version": "unofficial-version-05.26.2024",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
+  "_moduleAliases": {
+    "@root": ".",
+    "@index": "src/discord/base/structures/module.js",
+    "@database": "src/database",
+    "@discord": "src/discord",
+    "@settings": "src/settings",
+    "@structures": "src/discord/base/structures"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --trace-warnings src/index.js",
+    "dev": "nodemon --trace-warnings src/index.js"
   },
   "keywords": [],
   "author": "yeyTaken",
@@ -13,9 +22,13 @@
     "@types/node": "^18.0.6",
     "better-sqlite3": "^9.2.2",
     "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
     "glob": "^10.3.10",
+    "module-alias": "^2.2.3",
     "mongoose": "^8.0.4",
+    "mustache": "^4.2.0",
     "node-fetch": "^3.2.6",
+    "nodemon": "^3.1.1",
     "quick.db": "^9.1.7"
   }
 }
